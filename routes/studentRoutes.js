@@ -61,4 +61,4 @@ router.delete('/students/:id', async (req,res) => {
     }
 });
 
-module.esports = router;
+module.exports = router;
