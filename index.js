@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', require('./routes/studentRoutes'));
 
-mongoose.connect(process.env.MONGO_URI, {userNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => console.log('MongoDB connected'))
 .catch((error) => console.log('MongoDB connection error', error));
 
